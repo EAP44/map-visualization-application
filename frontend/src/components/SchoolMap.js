@@ -39,7 +39,6 @@ function SchoolMap() {
           <Popup>
             -{room.name}<br />
             Rabat, Morocco <br /> Faculté des Sciences de Rabat.
-            <img src={imageUrl} alt="Rabat" style={{ width: "100%", height: "auto" }} />
           </Popup>
         </Marker>
       ))}
