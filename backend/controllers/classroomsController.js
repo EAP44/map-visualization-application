@@ -11,7 +11,11 @@ exports.getClassrooms = async (req, res) => {
 };
 
 exports.getShortestPath = (req, res) => {
+  try{
   const { start, end } = req.body;
   const path = findShortestPath(start, end);
   res.json(path);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
 };
