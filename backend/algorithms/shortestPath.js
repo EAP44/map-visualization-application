@@ -21,8 +21,8 @@ function findShortestPath(start, end) {
   const distance = earthRadiusKm * c;
 
   return distance;
-  // const path = [start, end];
-  // return path;
+  const path = [start, end];
+  return path;
 }
 
 module.exports = { findShortestPath };
