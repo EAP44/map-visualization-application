@@ -23,11 +23,12 @@ function SchoolMap() {
     popupAnchor: [0, -40],
   });
   
-
-  // const handleClassroomClick = (start, end) => {
-  //   axios.post('http://localhost:5000/api/classrooms/shortest-path', { start, end })
-  //     .then((response) => console.log(response.data));
-  // };
+//??
+  const handleClassroomClick = (start, end) => {
+    axios.post('http://localhost:5000/api/classrooms/shortest-path', { start, end })
+      .then((response) => console.log(response.data));
+  };
+//??
 
   return (
     <MapContainer center={[34.00764489775214, -6.838413737824203]} zoom={19} style={{ height: '950px', width: '100%' }}>
